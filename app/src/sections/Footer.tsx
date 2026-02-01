@@ -1,11 +1,9 @@
-import { Github, Linkedin, Mail, Twitter, Heart, ArrowUp } from 'lucide-react';
+import { Github, Linkedin, Mail, ArrowUp } from 'lucide-react';
 
 const Footer = () => {
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
-
-  const currentYear = new Date().getFullYear();
 
   const navLinks = [
     { label: 'Home', href: '#hero' },
