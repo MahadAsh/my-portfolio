@@ -69,8 +69,8 @@ const Contact = () => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Replace with your actual Web3Forms access key
-    const ACCESS_KEY = "a144f416-4b3b-4d20-adc1-17e96f81551d";
+    // Replace with your actual Web3Forms access key using an environment variable
+    const ACCESS_KEY = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY || "a144f416-4b3b-4d20-adc1-17e96f81551d";
 
     try {
       const response = await fetch('https://api.web3forms.com/submit', {
